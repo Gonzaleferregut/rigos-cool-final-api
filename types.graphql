@@ -12,13 +12,13 @@ type Contact @model{
   fullName: String!
   email: String! @isUnique
   phone: String!
-  interest: Interest! 
+  interest: Interest!
 }
 
 type Login @model{
   id: ID! @isUnique
   createdAt: DateTime!
   updatedAt: DateTime!
-  userName: String! @isUnique
+  userName: String! 
   passWord: String!
 }
