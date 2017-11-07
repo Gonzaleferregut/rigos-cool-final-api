@@ -19,6 +19,15 @@ type Login @model{
   id: ID! @isUnique
   createdAt: DateTime!
   updatedAt: DateTime!
-  userName: String! 
+  userName: String!
   passWord: String!
+}
+
+# added by email-password template: (please uncomment)
+type User @model {
+  id: ID! @isUnique
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  email: String! @isUnique
+  password: String!
 }
